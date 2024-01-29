@@ -14,8 +14,8 @@ int main () {
     int num_apples;
     double price_per_apple;
     double total;
-
     // ask user for name 
+     cout << "M2T2" << endl;
     cout << " Hi, what's your name? " << endl;
     cin >> name;
     cout << "Nice to meet you, " << name << endl;
@@ -31,15 +31,16 @@ int main () {
 
     // print output
     // TODO: make a nice receipt
-
+    cout << endl;
     cout << "Thank you for purchasing " <<  num_apples << " apples." << endl;
 cout << " store #600 Tel #24" << endl;
 cout << "Jan 29 (monday) 1:54" << endl;
 cout << "QTY item" << endl;
-cout << "apples " << num_apples << "\t" << "$" << "3.50" << endl;
 
 
+cout << num_apples  << " apples" << "\t" << "$" << "3.50" << endl;
+cout << "--------------------------" << endl;
+cout << "Total" << " $" << total << endl;
 
-    cout << "M2T2" << endl;
     return 0;
 }
