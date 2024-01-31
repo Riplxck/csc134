@@ -7,24 +7,37 @@ L carter
 #include <iostream>
 #include <iomanip>
 using namespace std;
-
 int main () {
-    cout << "Part 1 - Area of a Rectangle" << endl;
+    cout << "M2T1 - box dimensions " << endl;
 //declare variables
 double lenght; 
 double width;
-// double heigth; // for later
-double area;
+double height;
+double volume;
+// constants dont chnage during the run
+ const double COST_PER_CUBIC_FOOT = 0.23;
+ const double CHANGE_PER_CUBIC_FOOT = 0.5;
+
+//  Calculate 3d box (rectangular prism)
 // get input
+cout << "Input box dimensions." << endl;
 cout << "What is the lenght of the rectangle? ";
 cin >> lenght;
 cout << "What is the width of the rectangle? ";
 cin >> width;
+cout << "What is the height? ";
+cin >> height;
 
 // do calculations
-area = lenght* width;
+volume = lenght * width * height;
 
 // print output
-cout << "The area of the rectangle is: " << area << endl;
+cout << "The volume of the rectangle is: " << volume << endl;
 
+// part 2: calculate the cost of the box
+// calculate price to make it 
+
+cout << "cost " << volume * COST_PER_CUBIC_FOOT << endl;
+
+return 0;
 }

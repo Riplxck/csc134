@@ -9,6 +9,7 @@ L carter
 using namespace std;
 
 int main () {
+    cout << fixed << setprecision (2); // only show 2 decimal places
     // set up variables 
     string name;
     int num_apples;
@@ -38,9 +39,9 @@ cout << "Jan 29 (monday) 1:54" << endl;
 cout << "QTY item" << endl;
 
 
-cout << num_apples  << " apples" << "\t" << "$" << "3.50" << endl;
+cout << num_apples  << " apples" << "\t" << "$" << total << endl;
 cout << "--------------------------" << endl;
-cout << "Total" << " $" << total << endl;
+cout << "Total" << "\t \t$" << total << endl;
 
     return 0;
 }
