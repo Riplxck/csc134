@@ -8,15 +8,15 @@ L carter
 #include <iomanip>
 using namespace std;
 int main () {
-    cout << "M2T1 - box dimensions " << endl;
+    cout << "M2LAB1 - box dimensions " << endl;
 //declare variables
 double lenght; 
 double width;
 double height;
 double volume;
-// constants dont chnage during the run
+// constants dont change during the run
  const double COST_PER_CUBIC_FOOT = 0.23;
- const double CHANGE_PER_CUBIC_FOOT = 0.5;
+ const double CHARGE_PER_CUBIC_FOOT = 0.5;
 
 //  Calculate 3d box (rectangular prism)
 // get input
@@ -37,7 +37,8 @@ cout << "The volume of the rectangle is: " << volume << endl;
 // part 2: calculate the cost of the box
 // calculate price to make it 
 
-cout << "cost " << volume * COST_PER_CUBIC_FOOT << endl;
+cout << "cost: " << "$" << volume * COST_PER_CUBIC_FOOT << endl;
+cout << "profit: " << "$" << CHARGE_PER_CUBIC_FOOT - COST_PER_CUBIC_FOOT << endl;
 
 return 0;
 }
