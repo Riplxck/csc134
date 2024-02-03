@@ -33,11 +33,12 @@ volume = lenght * width * height;
 
 // print output
 cout << "The volume of the rectangle is: " << volume << endl;
-
+cout << "The cost per cubic foot is: " << COST_PER_CUBIC_FOOT << endl;
+cout << "The charge per cubic foot is: " << CHARGE_PER_CUBIC_FOOT << endl;
 // part 2: calculate the cost of the box
 // calculate price to make it 
 
-cout << "cost: " << "$" << volume * COST_PER_CUBIC_FOOT << endl;
+cout << "Total cost: " << "$" << volume * COST_PER_CUBIC_FOOT << endl;
 cout << "profit: " << "$" << CHARGE_PER_CUBIC_FOOT - COST_PER_CUBIC_FOOT << endl;
 
 return 0;
