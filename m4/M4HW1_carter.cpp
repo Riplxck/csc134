@@ -14,9 +14,9 @@ int main() {
     //firstNum = 0;
     firstNum = 5;
      secondNum = 1;
-    // answer = firstNum * secondNum;
-    //cout << "What is your first number" << endl;
-    // cin >> firstNum;
+     answer = firstNum * secondNum;
+    //cout << "Enter a number from 1-12" << endl;
+     //cin >> firstNum;
 for(int i=1; i<= 12; i++) {
     answer = firstNum * i;
     cout << firstNum << " times " << i << " is " << answer << endl;
