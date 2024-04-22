@@ -1,5 +1,6 @@
 #include <iostream>
 using namespace std;
+#include "m6lab1_util.h"
 /*
 CSC 134 
 M6LAB1- buckshot
@@ -9,16 +10,13 @@ handle loading and looking at a shotgun magazine
 max 6 shells, they are live, blanks, or empty.
 */
 
-const int MAX_SHELLS = 6;
-const int EMPTY = 0;
-const int BLANK = 1;
-const int LIVE = 2;
+
  // array is global variable (all functions can see it )
  int magazine[MAX_SHELLS] = {LIVE, BLANK , EMPTY, LIVE, BLANK , EMPTY} ;
 
 // function prototypes
 // get the name of a shell
-string shell_name(int shell);
+
 
 int main (){
 
@@ -41,23 +39,3 @@ for (int shell: magazine) {
 }
 // utility function
 
-string shell_name(int shell) {
-// input: number of shell
-// output: name ("empty", "blank", "live")
-string name;
-if(shell ==EMPTY) {
-name = "EMPTY";
-
-}
-if (shell == BLANK) {
-name = "BLANK";
-
-}
-if (shell == LIVE) {
-
-name = "LIVE";
-
-
-}
-return name;
-}
